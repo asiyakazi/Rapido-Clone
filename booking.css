@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#111;
+}
+
+/* Main Container */
+
+.container-booking{
+    width:95%;
+    max-width:1700px;
+    margin:0 auto;
+    padding:20px 0 150px;
+}
+
+/* Logo */
+
+.logo{
+    margin-bottom:25px;
+}
+
+.logo img{
+    width:78px;
+}
+
+/* ================= Location Box ================= */
+
+.location-box{
+    width:100%;
+    background:#f7f7f7;
+    border:1px solid #ddd;
+    border-radius:18px;
+    padding:18px 22px;
+}
+
+.location-row{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    font-size:20px;
+    font-weight:500;
+    padding:12px 0;
+}
+
+.location-box hr{
+    border:none;
+    border-top:1px solid #ddd;
+    margin-left:40px;
+}
+
+.pickup-icon{
+    color:#16a34a;
+    font-size:22px;
+}
+
+.drop-icon{
+    color:#e53935;
+    font-size:22px;
+}
+
+/* ================= Service ================= */
+
+.service-title{
+    margin:35px 0 18px;
+    font-size:24px;
+    font-weight:500;
+}
+
+.service-card{
+    border:1.5px solid #2563eb;
+    border-radius:16px;
+    padding:20px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+    margin-bottom:16px;   /* Space between cards */
+}
+
+.service-card:hover{
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transform:translateY(-2px);
+}
+
+.service-left{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.service-left img{
+    width:42px;
+}
+
+.service-left h3{
+    font-size:22px;
+    margin:0;
+    font-weight:600;
+}
+
+.price{
+    font-size:22px;
+    font-weight:700;
+}
+
+/* ================= Bottom Bar ================= */
+
+.bottom-bar{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background:#fff;
+    border-top:1px solid #ddd;
+    padding:15px 5%;
+}
+
+.payment{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.payment i{
+    font-size:20px;
+    color:#444;
+}
+
+.payment-select{
+    border:none;
+    outline:none;
+    font-size:18px;
+    font-weight:500;
+    background:transparent;
+    cursor:pointer;
+    color:#111;
+}
+
+.payment-select option{
+    background:#fff;
+    color:#111;
+}
+.continue-btn{
+    width:100%;
+    height:55px;
+    border:none;
+    background:#ffc400;
+    border-radius:8px;
+    font-size:22px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.continue-btn:hover{
+    background:#ffb800;
+}
+
+/* ================= Tablet ================= */
+
+@media(max-width:992px){
+
+.container-booking{
+    width:94%;
+}
+
+.location-row{
+    font-size:18px;
+}
+
+.service-title{
+    font-size:22px;
+}
+
+.service-left img{
+    width:38px;
+}
+
+.service-left h3{
+    font-size:20px;
+}
+
+.price{
+    font-size:20px;
+}
+
+.continue-btn{
+    font-size:20px;
+}
+
+}
+
+/* ================= Mobile ================= */
+
+@media(max-width:768px){
+
+.container-booking{
+    width:94%;
+    padding-bottom:140px;
+}
+
+.logo img{
+    width:65px;
+}
+
+.location-box{
+    padding:15px;
+}
+
+.location-row{
+    gap:12px;
+    font-size:15px;
+    align-items:flex-start;
+}
+
+.location-box hr{
+    margin-left:30px;
+}
+
+.service-title{
+    font-size:20px;
+}
+
+.service-card{
+    padding:15px;
+}
+
+.service-left{
+    gap:12px;
+}
+
+.service-left img{
+    width:34px;
+}
+
+.service-left h3{
+    font-size:18px;
+}
+
+.price{
+    font-size:18px;
+}
+
+.payment{
+    font-size:16px;
+}
+
+.continue-btn{
+    height:50px;
+    font-size:18px;
+}
+
+}
+
+/* ================= Small Mobile ================= */
+
+@media(max-width:480px){
+
+.location-row{
+    font-size:14px;
+}
+
+.service-card{
+    padding:14px;
+}
+
+.service-left img{
+    width:30px;
+}
+
+.service-left h3{
+    font-size:16px;
+}
+
+.price{
+    font-size:17px;
+}
+
+.continue-btn{
+    height:48px;
+    font-size:17px;
+}
+
+}

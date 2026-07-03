@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rapido Clone</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<div class="logo-box">
+<span>rapido</span>
+</div>
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link  active" href="about.html">About Us</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="safety.html">Safety</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Careers</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Press</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+
+</ul>
+
+<button
+    class="download-btn"
+    onclick="window.open('https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606','_blank')">
+    Download App
+</button>
+</div>
+
+</div>
+</nav>
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="about-section">
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+            <!-- Left -->
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+
+                <div class="about-left">
+
+                    <h2>India's Beloved</h2>
+
+                    <h1>Bike Taxi Service</h1>
+
+                    <h3>We are not an option, we are a choice</h3>
+
+                    <p>
+                        We're #1 choice of 10 Million people because we're the
+                        solution of India's intra-city commuting problems.
+                        With assured safety, we also provide economically
+                        priced rides.
+                    </p>
+
+                    <h3>What makes us different?</h3>
+
+                    <p>
+                        Our bike taxis can dodge the traffic during peak hours
+                        and get you to the destination in a jiffy! So when
+                        you think travel, think Rapido.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2 text-center">
+
+                <div class="about-right">
+
+                    <img src="about.png"
+                         class="img-fluid"
+                         alt="About Rapido">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FOUNDERS ================= -->
+
+<section class="success-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 text-center">
+
+                <h2>Champions of our success story</h2>
+
+            </div>
+
+        </div>
+        <script>
+function zoomFounder(img){
+
+    img.classList.add("zoom");
+
+    setTimeout(() => {
+        img.classList.remove("zoom");
+    }, 600);
+
+}
+</script>
+
+        <div class="row justify-content-center gy-5">
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+
+                <div class="founder">
+
+                   <img src="founder1.jpg"
+     class="img-fluid founder-img"
+     alt="Founder"
+     onclick="zoomFounder(this)">
+                    <h3>Rishikesh S R</h3>
+
+                    <p>Founder</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+
+                <div class="founder">
+
+                    <img src="founder2.jpg"
+                         class="img-fluid founder-img"
+                         alt="Founder">
+
+                    <h3>Pavan Guntupalli</h3>
+
+                    <p>Founder</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+
+                <div class="founder">
+
+                    <img src="founder3.jpg"
+                         class="img-fluid founder-img"
+                         alt="Founder">
+
+                    <h3>Aravind Sanka</h3>
+
+                    <p>Founder</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= JOBS SECTION ================= -->
+
+<section class="jobs-section">
+
+    <div class="container h-100">
+
+        <div class="row justify-content-center align-items-center h-100">
+
+            <div class="col-lg-8 col-md-10 col-12">
+
+                <div class="jobs-overlay">
+
+                    <h1>Jobs @ Rapido</h1>
+
+                    <p>
+                        Join us in exploring a world of endless opportunities.
+                        Let's find a spot for you.
+                    </p>
+                    <a href="careers.html">
+                    <button class="work-btn">
+                        Work with us
+                    </button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row gx-4 gy-4 align-items-start">
+
+    <!-- Customer -->
+    <div class="col-lg-2 col-md-6">
+        <h3>Customer app</h3>
+
+        <a href="#">
+            <img src="google-play.png" class="store-img" alt="">
+        </a>
+
+        <a href="#">
+            <img src="app-store.png" class="store-img" alt="">
+        </a>
+    </div>
+
+    <!-- Captain -->
+    <div class="col-lg-2 col-md-6">
+        <h3>Captain app</h3>
+
+        <a href="#">
+            <img src="google-play.png" class="store-img" alt="">
+        </a>
+    </div>
+
+    <!-- Company -->
+   <div class="col-lg-2 col-md-6">
+        <ul class="footer-links">
+            <li>
+                <a href="index.html" class="footer-link">Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="footer-link">About Us</a>
+            </li>
+            <li>
+                <a href="safety.html" class="footer-link">Safety</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Careers</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Blog</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Press</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Privacy Policy</a>
+            </li>
+           
+        </ul>
+    </div>
+
+    <!-- Terms -->
+    <div class="col-lg-3 col-md-6">
+        <ul class="footer-links">
+            <li>
+                <a href="https://www.rapido.bike/CustomerTerms" class="footer-link">Customer Terms - Bike Taxi</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CustomerTerms#cabs" class="footer-link">Customer Terms - Cabs and Auto</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CorporateAffairs" class="footer-link">Corporate Affairs</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CaptainTerms" class="footer-link">Customer Terms - Bike Taxi</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CaptainTerms#cabs" class="footer-link">Customer Terms - Cabs and Auto</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="col-lg-2 col-md-6">
+        <h3 class="follow-title">Follow Us</h3>
+
+         <div class="social-icons justify-content-lg-end">
+            <a href="https://www.facebook.com/rapido4bike/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/rapidobikeapp"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/rapido-bike/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/rapidoapp/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+</div>
+<hr>
+
+<p class="copyright">
+    © 2026 Roppen Transportation. All rights reserved.
+</p>
+
+</footer>
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

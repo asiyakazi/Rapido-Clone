@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rapido Clone</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<div class="logo-box">
+<span>rapido</span>
+</div>
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About Us</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="safety.html">Safety</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Careers</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Press</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+
+</ul>
+
+<button
+    class="download-btn"
+    onclick="window.open('https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606','_blank')">
+    Download App
+</button>
+
+</div>
+
+</div>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h1>
+India's #1 <br>
+Ride-Hailing App
+</h1>
+
+<p>
+Quick, affordable rides at your doorstep
+</p>
+
+<div class="input-box">
+    <i class="fa-solid fa-location-dot"></i>
+    <input
+        type="text"
+        id="pickup"
+        placeholder="Enter Pickup Location">
+</div>
+
+<div class="input-box drop">
+    <i class="fa-regular fa-circle-dot"></i>
+    <input
+        type="text"
+        id="drop"
+        placeholder="Enter Drop Location">
+</div>
+
+<button class="ride-btn" id="bookRide">
+    Book Ride
+</button>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img
+src="hero.png"
+alt="Hero Image"
+class="img-fluid hero-img">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services">
+
+<div class="container">
+
+<div class="services-heading">
+    <h2>Our Services</h2>
+    <div class="services-line"></div>
+</div>
+
+<div class="row g-4 mt-4">
+
+<!-- Card 1 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="service-card">
+
+<div class="service-text">
+
+<h3>Bike-Taxi</h3>
+
+<p>
+Beat traffic, ride quicker
+</p>
+
+</div>
+
+<img src="Bike.png" alt="Bike">
+
+</div>
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="service-card">
+
+<div class="service-text">
+
+<h3>Auto</h3>
+
+<p>
+Everyday autos made easy
+</p>
+
+</div>
+
+<img src="auto.png" alt="Auto">
+
+</div>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="service-card">
+
+<div class="service-text">
+
+<h3>Cab</h3>
+
+<p>
+Comfort for every journey
+</p>
+
+</div>
+
+<img src="cab.png" alt="Cab">
+
+</div>
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="service-card">
+
+<div class="service-text">
+
+<h3>Parcel</h3>
+
+<p>
+Quick secure deliveries
+</p>
+
+</div>
+
+<img src="parcel.png" alt="Parcel">
+
+</div>
+
+</div>
+
+<!-- Card 5 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="service-card">
+
+<div class="service-text">
+
+<h3>Travel & Stay</h3>
+
+<p>
+One app entire journey
+</p>
+
+</div>
+
+<img src="travel.png" alt="Travel">
+
+</div>
+
+</div>
+
+<!-- Card 6 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="service-card">
+
+<div class="service-text">
+
+<h3>Metro Ticket</h3>
+
+<p>
+Rides to and from metro
+</p>
+
+</div>
+
+<img src="metro.png" alt="Metro">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= OFFER SECTION ================= -->
+
+<section class="offer-section py-5">
+
+    <div class="container">
+
+        <div class="offer-heading">
+    <h2>What we offer</h2>
+    <div class="offer-line"></div>
+</div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="offer-card h-100">
+
+                    <img src="pickup.jpg" class="img-fluid" alt="Quick Pickup">
+
+                    <h3 class="mt-4">
+                        Quick Pickup
+                    </h3>
+
+                    <p>
+                        Pickups within minutes that help you save time on every
+                        ride. A Rapido is always nearby whenever you need one.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="offer-card h-100">
+
+                    <img src="fare.jpg" class="img-fluid" alt="Best Fares">
+
+                    <h3 class="mt-4">
+                        Best Fares
+                    </h3>
+
+                    <p>
+                        Affordable prices designed for daily rides. Travel
+                        comfortably without spending extra money.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-lg-4 col-md-6 mx-md-auto">
+
+                <div class="offer-card h-100">
+
+                    <img src="ride.jpg" class="img-fluid" alt="Never Too Far">
+
+                    <h3 class="mt-4">
+                        Never Too Far
+                    </h3>
+
+                    <p>
+                        Available across 400+ cities and expanding every month.
+                        Wherever you go, Rapido is nearby.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= EARN SECTION ================= -->
+
+<section class="earn-section py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left Image -->
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 text-center">
+                <img src="earn-rapido.png" class="img-fluid earn-img" alt="Earn With Rapido">
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-lg-6 col-md-12 earn-content">
+
+                <h2>Earn with Rapido</h2>
+
+                <div class="yellow-line"></div>
+
+                <p>
+                    Become a Rapido Captain. Ride whenever you want,
+                    work how you want, and earn on your own terms.
+                </p>
+
+                <a href="https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606" class="earn-btn">
+                    Start Earning →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DOWNLOAD SECTION ================= -->
+
+<section class="download-section">
+<div class="container">
+
+<div class="text-center">
+
+<h2 class="fw-bold">
+Download Now
+</h2>
+
+<div class="Yellow-line mb-5"></div>
+
+</div>
+
+<div class="row justify-content-center gx-5 gy-4">
+<div class="col-lg-5 col-md-6">
+
+<div class="download-card text-center">
+
+<a href="https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606" target="_blank">
+    <img src="rapido-logo.png"
+         class="img-fluid mb-3"
+         alt="Rider">
+</a>
+<h3>
+
+Bike Taxi
+
+<br>
+
+Auto & Cabs
+
+</h3>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="download-card text-center">
+<a href="index.html">
+<img src="rapido-captain.png"
+class="img-fluid mb-3"
+alt="Captain">
+</a>
+
+
+<h3>
+
+Drive
+
+<br>
+
+& Earn
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row gx-4 gy-4 align-items-start">
+
+    <!-- Customer -->
+    <div class="col-lg-2 col-md-6">
+        <h3>Customer app</h3>
+
+        <a href="https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606">
+            <img src="google-play.png" class="store-img" alt="">
+        </a>
+
+        <a href="https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606">
+            <img src="app-store.png" class="store-img" alt="">
+        </a>
+    </div>
+
+    <!-- Captain -->
+    <div class="col-lg-2 col-md-6">
+        <h3>Captain app</h3>
+
+        <a href="index.html">
+            <img src="google-play.png" class="store-img" alt="">
+        </a>
+    </div>
+
+    <!-- Company -->
+    <div class="col-lg-2 col-md-6">
+        <ul class="footer-links">
+            <li>
+                <a href="index.html" class="footer-link">Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="footer-link">About Us</a>
+            </li>
+            <li>
+                <a href="safety.html" class="footer-link">Safety</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Careers</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Blog</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Press</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Privacy Policy</a>
+            </li>
+           
+        </ul>
+    </div>
+
+    <!-- Terms -->
+    <div class="col-lg-3 col-md-6">
+        <ul class="footer-links">
+            <li>
+                <a href="https://www.rapido.bike/CustomerTerms" class="footer-link">Customer Terms - Bike Taxi</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CustomerTerms#cabs" class="footer-link">Customer Terms - Cabs and Auto</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CorporateAffairs" class="footer-link">Corporate Affairs</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CaptainTerms" class="footer-link">Customer Terms - Bike Taxi</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CaptainTerms#cabs" class="footer-link">Customer Terms - Cabs and Auto</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="col-lg-2 col-md-6">
+        <h3 class="follow-title">Follow Us</h3>
+
+         <div class="social-icons justify-content-lg-end">
+            <a href="https://www.facebook.com/rapido4bike/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/rapidobikeapp"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/rapido-bike/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/rapidoapp/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+</div>
+<hr>
+
+<p class="copyright">
+    © 2026 Roppen Transportation. All rights reserved.
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById("bookRide").addEventListener("click", function () {
+
+    let pickup = document.getElementById("pickup").value.trim();
+    let drop = document.getElementById("drop").value.trim();
+
+    if (pickup === "") {
+        alert("Please enter Pickup Location");
+        document.getElementById("pickup").focus();
+        return;
+    }
+
+    if (drop === "") {
+        alert("Please enter Drop Location");
+        document.getElementById("drop").focus();
+        return;
+    }
+
+    // Save locations
+    localStorage.setItem("pickup", pickup);
+    localStorage.setItem("drop", drop);
+
+    // Go to next page
+    window.location.href = "booking.html";
+});
+</script>
+
+</body>
+
+</html>

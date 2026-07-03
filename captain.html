@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rapido Clone</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="captain.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<div class="logo-box">
+<span>rapido</span>
+</div>
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About Us</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link  active" href="safety.html">Safety</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Careers</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Press</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+
+</ul>
+
+<button
+    class="download-btn"
+    onclick="window.open('https://apps.apple.com/in/app/rapido-bike-taxi-auto-cabs/id1198464606','_blank')">
+    Download App
+</button>
+
+</div>
+
+</div>
+</nav>
+
+<!-- Secondary Navbar -->
+<div class="safety-nav">
+    <div class="safety-menu">
+        <a href="safety.html">Overviews</a>
+        <a href="customers.html">Customers</a>
+        <a href="captain.html"  class="active" >Captains</a>
+    </div>
+</div>
+</section>
+<section class="rkx_captain_safety_wrapper">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+            <!-- Text -->
+
+            <div class="col-lg-6 text-center text-lg-start">
+
+                <div class="rkx_captain_text_side">
+
+                    <h1 class="rkx_captain_heading">
+                        Captains Safety
+                    </h1>
+
+                    <p class="rkx_captain_description">
+                        All rides are insured. Accidental coverage and
+                        medical benefits covered up to Rs 5 Lakh for
+                        Captain & family.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Image -->
+
+            <div class="col-lg-6 text-center">
+
+                <div class="rkx_captain_image_side mx-auto">
+
+                    <div class="rkx_captain_yellow_frame"></div>
+
+                    <img src="captain-bike.png"
+                         class="rkx_captain_photo img-fluid"
+                         alt="Captain Safety">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        
+<section class="way-forward">
+
+    <div class="way-content">
+
+        <h2>Way forward on Safety</h2>
+
+        <p>
+            To further substantiate our commitment to Safety First
+            towards customers & captains, we will be incorporating
+            new features on our platform very soon.
+        </p>
+<a href="#" onclick="toggleSafety(); return false;">
+    Know More <span id="arrow">↓</span>
+</a>
+    </div>
+    <script>
+function toggleSafety() {
+
+    let section = document.getElementById("more-safety");
+    let arrow = document.getElementById("arrow");
+
+    if (section.style.display === "none" || section.style.display === "") {
+        section.style.display = "flex";
+        arrow.innerHTML = "↑";
+    } else {
+        section.style.display = "none";
+        arrow.innerHTML = "↓";
+    }
+
+}
+</script>
+
+</section>
+<section id="more-safety" class="more-safety">
+
+    <div class="more-card">
+        <i class="fa-regular fa-clock"></i>
+
+        <h3>Ride Completion Check</h3>
+
+        <p>
+            Anyone who takes a ride between 10 pm and
+            6 am will be contacted by Rapido Customer
+            Care for a safety check after the ride is
+            completed.
+        </p>
+    </div>
+
+    <div class="more-card">
+        <i class="fa-solid fa-headset"></i>
+
+        <h3>Proactive Check-In</h3>
+
+        <p>
+            Every rider will be alerted on the system and
+            called by Rapido Customer Care when there
+            is any unusual activity or deviation from the
+            set protocol.
+        </p>
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row gx-4 gy-4 align-items-start">
+
+    <!-- Customer -->
+    <div class="col-lg-2 col-md-6">
+        <h3>Customer app</h3>
+
+        <a href="#">
+            <img src="google-play.png" class="store-img" alt="">
+        </a>
+
+        <a href="#">
+            <img src="app-store.png" class="store-img" alt="">
+        </a>
+    </div>
+
+    <!-- Captain -->
+    <div class="col-lg-2 col-md-6">
+        <h3>Captain app</h3>
+
+        <a href="#">
+            <img src="google-play.png" class="store-img" alt="">
+        </a>
+    </div>
+
+    <!-- Company -->
+    <div class="col-lg-2 col-md-6">
+        <ul class="footer-links">
+            <li>
+                <a href="index.html" class="footer-link">Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="footer-link">About Us</a>
+            </li>
+            <li>
+                <a href="safety.html" class="footer-link">Safety</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Careers</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Blog</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Press</a>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Privacy Policy</a>
+            </li>
+           
+        </ul>
+    </div>
+
+    <!-- Terms -->
+    <div class="col-lg-3 col-md-6">
+        <ul class="footer-links">
+            <li>
+                <a href="https://www.rapido.bike/CustomerTerms" class="footer-link">Customer Terms - Bike Taxi</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CustomerTerms#cabs" class="footer-link">Customer Terms - Cabs and Auto</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CorporateAffairs" class="footer-link">Corporate Affairs</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CaptainTerms" class="footer-link">Customer Terms - Bike Taxi</a>
+            </li>
+            <li>
+                <a href="https://www.rapido.bike/CaptainTerms#cabs" class="footer-link">Customer Terms - Cabs and Auto</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="col-lg-2 col-md-6">
+        <h3 class="follow-title">Follow Us</h3>
+
+         <div class="social-icons justify-content-lg-end">
+            <a href="https://www.facebook.com/rapido4bike/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/rapidobikeapp"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/rapido-bike/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/rapidoapp/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+</div>
+<hr>
+
+<p class="copyright">
+    © 2026 Roppen Transportation. All rights reserved.
+</p>
+
+</footer>
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
